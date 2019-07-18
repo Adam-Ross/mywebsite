@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+ background: #f4f4f4;   
+ font-family: Arial, Helvetica, sans-serif;
+ color: #333;
+}
+
+.container {
+    margin: 3rem;
+}
+
+.about-header h1 {
+    font-size: 7rem;
+    margin-bottom: 7rem;
+    text-transform: uppercase;
+}
+
+.about-plot p {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-plot p a {
+    text-decoration: none;
+    color: #333;
+}
+
+.resume {
+    margin-top: 2rem;
+}
+
+.btn {
+    background: #ed3833;
+    color: #f9f3ec;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    margin: 3rem;
+}
+
+.nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: skyblue;
+    font-size: 2rem;
+    transition: all 1s ease;
+
+}
+
+.nav a:hover {
+    color: #333;
+    transition: all 1s ease;
+}
+
+.youtube {
+    margin-top: 4rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.youtube a {
+    text-decoration: none;
+    color: skyblue;
+    transition: all 1s ease;
+}
+
+
+.youtube a:hover {
+    color: #333;
+    transition: all 1s ease;
+}
+
+/* .about-header h1 {
+    font-size: 4rem;
+} */
+
+@media only screen and (max-width: 500px) {
+    .about-header h1 {
+    font-size: 4rem;
+    }
+
+    .container {
+        margin: 1rem;;
+    }
+}
