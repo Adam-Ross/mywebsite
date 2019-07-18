@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f9f3ec;
+    /* 63aabc */
+}
+
+.top {
+    background: #ed3833;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f9f3ec;
+    text-align: center;
+    padding: 8rem;
+}
+
+.top h1 {
+    font-size: 6rem;
+    background: #ed3833;
+}
+
+.top p {
+    font-size: 2rem;
+    background: #ed3833;
+}
+
+.container {
+    padding: 2rem 2rem 3rem 2rem;
+    color: #333;
+}
+
+.main-grid {
+    margin:2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    grid-template-areas: 
+    'professional employment'
+    'highlights employment';
+}
+
+
+.professional {
+    grid-area: professional;
+}
+
+.employment {
+    grid-area: employment;
+}
+
+.highlights {
+    grid-area: highlights;
+}
+
+.item h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    display: inline-block;
+    border-bottom: 5px dotted #63aabc;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+.item p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.job-item h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.job-item p {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: .5rem;
+}
+
+.list {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.list-item {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.bottom-grid {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    'contact compt'
+    'education compt';
+}
+
+.contact {
+    grid-area: contact;
+}
+
+.contact-item h1 {
+    border: none;
+    margin:0;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.contact-item p {
+    margin-bottom: 2rem;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.btn {
+    background: #ed3833;
+    color: #f9f3ec;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn:hover {
+    background: #63aabc;
+    transition: background 1s ease;
+}
+
+.compt {
+    grid-area: compt;
+}
+
+.education {
+    grid-area: education;
+}
+
+.compt p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.education p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+}
+
+.footer {
+
+    padding: 2rem;
+    text-align: left;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'professional' 
+        'employment'
+        'highlights';
+    }
+
+    .bottom-grid {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'contact' 
+        'compt'
+        'education';
+    }
+
+    .top {
+        background: #f9f3ec;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f9f3ec;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .top h1 {
+        background: #f9f3ec;
+        font-size: 4rem;
+        color: #333;
+    }
+
+    .top p {
+        background: #f9f3ec;
+        font-size: 1rem;
+        color: #333;
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    
+    .item h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3rem;
+        display: inline-block;
+        border-bottom: 5px dotted #63aabc;
+        margin-bottom: 1rem;
+        padding-bottom: .5rem;
+    }
+  }
